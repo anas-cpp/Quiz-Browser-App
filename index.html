@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Browser App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="nextQuestion()">
+    <div class="quiz-wrapper">
+      <h1>Quiz App</h1>
+      <h1 id="timer">2:00</h1>
+
+      <p id="ques">Question text here</p>
+
+      <input
+        value="1"
+        onclick="clicked()"
+        type="radio"
+        class="options"
+        name="options"
+        id="opt1-radio"
+      />
+      <label id="opt1" for="opt1-radio">Option 1</label>
+
+      <input
+        value="2"
+        onclick="clicked()"
+        type="radio"
+        class="options"
+        name="options"
+        id="opt2-radio"
+      />
+      <label id="opt2" for="opt2-radio">Option 2</label>
+
+      <input
+        value="3"
+        onclick="clicked()"
+        type="radio"
+        class="options"
+        name="options"
+        id="opt3-radio"
+      />
+      <label id="opt3" for="opt3-radio">Option 3</label>
+
+      <button id="btn" disabled onclick="nextQuestion()">Next</button>
+
+      <footer>Designed by Anas ✨</footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
